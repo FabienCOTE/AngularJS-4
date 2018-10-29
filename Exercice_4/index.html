@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 3</title>
+  </head>
+  <body ng-controller="CarCtrl">
+    <div ng-repeat="car in cars | filter : {couleur: '!verte'}">
+      {{car.marque}} - {{car.couleur}}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
